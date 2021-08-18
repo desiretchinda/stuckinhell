@@ -37,6 +37,11 @@ public class PlayerComponent : CharacterComponent
 
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        if (currentTalkingNpc && Input.GetKeyUp(KeyCode.E))
+        {
+            currentTalkingNpc.DisplayDialog();
+        }
+
         base.Update();
     }
 
