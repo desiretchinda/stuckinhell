@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class DataNpc : MonoBehaviour
+/// <summary>
+/// Class that contains NPC data in our database
+/// </summary>
+[Serializable]
+public class DataNpc : BaseData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /// <summary>
+    /// Npc's speed
+    /// </summary>
+    public float movementSpeed = 2;
+
+
+    /// <summary>
+    /// The visual gameobjet of the npc driven buy this data
+    /// </summary>
+    public NpcComponent npcGameobject;
 }

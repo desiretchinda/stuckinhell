@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
-public class PlayerDatabase : MonoBehaviour
+/// <summary>
+/// Class to store player unique data in our system
+/// </summary>
+public class PlayerDatabase : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public DataPlayer dataPlayer = new DataPlayer();
 
-    // Update is called once per frame
-    void Update()
+#if UNITY_EDITOR
+
+    [MenuItem("StuckOnHell DATABSE/create base player")]
+    public static void Create()
     {
-        
+
+        PlayerDatabase asset = ScriptableObject.CreateInstance<PlayerDatabase>();
+
+        AssetDatabase.CreateAsset(asset, "Assets/Resources/base_player.asset");
+        Selection.activeObject = asset;
+        AssetDatabase.SaveAssets();
     }
+#endif
 }

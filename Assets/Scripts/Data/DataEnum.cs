@@ -28,23 +28,35 @@ public static class DataEnum
     }
 
     /// <summary>
-    /// Differents action we can have in this game
+    /// Differents action player can do in this game
     /// </summary>
     public enum PlayerAction
     {
-        GetJob,
-        OrderFood,
-        RobFacility,
+        OrderItem,
+        Rob,
         Chat,
         Hack,
         Work,
         GetPromotion,
-        Sleep
+        Sleep,
+        Dance,
+    }
+
+    /// <summary>
+    /// Differents system action we can have in this game
+    /// </summary>
+    public enum SystemAction
+    {
+        UpdateEnergy,
+        UpdateMoney,
+        OfferItem,
+        RemoveItem,
     }
 
     public enum ItemTipe
     {
         Consumable,
+        Cloth,
         NonConsumable,
     }
 

@@ -9,6 +9,8 @@ public class PlayerComponent : CharacterComponent
 {
     public static PlayerComponent Instance;
 
+    public NpcComponent currentTalkingNpc;
+
     RaycastHit hit;
 
     Ray ray;

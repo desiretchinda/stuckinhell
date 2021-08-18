@@ -12,6 +12,6 @@ public class SaveData
     /// <summary>
     /// The unique refrence of player data in this game
     /// </summary>
-    public DataPayer player = new DataPayer();
+    public DataPlayer player = new DataPlayer();
 
 }
