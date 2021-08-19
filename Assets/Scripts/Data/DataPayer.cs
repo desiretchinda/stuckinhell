@@ -35,6 +35,11 @@ public class DataPlayer : BaseData
     /// </summary>
     public int currentDay = 1;
 
+    /// <summary>
+    /// Player's inventory
+    /// </summary>
+    public List<DataItem> inventory = new List<DataItem>();
+
     public float TotalMoney()
     {
         return earnMoney + bankMoney;

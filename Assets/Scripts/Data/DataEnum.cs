@@ -53,6 +53,9 @@ public static class DataEnum
         RemoveItem,
     }
 
+    /// <summary>
+    /// Differents type of item in this game
+    /// </summary>
     public enum ItemTipe
     {
         Consumable,
@@ -60,5 +63,34 @@ public static class DataEnum
         NonConsumable,
     }
 
+    /// <summary>
+    /// Differents type of reward on this game
+    /// </summary>
+    public enum RewardTipe
+    {
+        AddMoney,
+        AddEnergy,
+    }
+
+    /// <summary>
+    /// Differents type of objectifs in this game
+    /// </summary>
+    public enum ObjectifTipe
+    {
+        TalkToNpc,
+        GetItem,
+        KillDemon,
+    }
+
+    /// <summary>
+    /// Condition
+    /// </summary>
+    public enum ConditionTipe
+    {
+        MoneyValue,
+        EnergyValue,
+        HasItem,
+        DemonKill,
+    }
 
 }

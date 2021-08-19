@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public static List<DataItem> itemCacheDatabase = new List<DataItem>();
 
+    /// <summary>
+    /// quest databse cache
+    /// </summary>
+    public static List<DataQuest> questCacheDatabase = new List<DataQuest>();
+
 
     private void Awake()
     {
@@ -180,6 +185,34 @@ public class GameManager : MonoBehaviour
 
 
         return itemCacheDatabase.Find(x => (x.id == id));
+    }
+
+    /// <summary>
+    /// Database function to get a item from the database
+    /// </summary>
+    /// <param name="id">Item ID</param>
+    /// <returns></returns>
+    public static DataQuest GetQuest(int id)
+    {
+        if (questCacheDatabase == null || questCacheDatabase.Count <= 0)
+        {
+            QuestDatabase database = Resources.Load<QuestDatabase>("quests_database");
+            if (database == null)
+                return null;
+
+            questCacheDatabase = database.questDatabase;
+        }
+
+
+        if (questCacheDatabase == null)
+            return null;
+
+        if (questCacheDatabase.Count <= id)
+            return null;
+
+
+
+        return questCacheDatabase.Find(x => (x.id == id));
     }
 
     /// <summary>

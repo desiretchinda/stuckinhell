@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c4ed423d8c4b94bb0f459fedf1fac4, type: 3}
+  m_Name: quests_database
+  m_EditorClassIdentifier: 
+  questDatabase:
+  - id: 0
+    name: Search me this shit
+    icon: {fileID: 0}
+    description: I just want you to kill grogon
+    appearCondition: []
+    objectifs:
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 1, y: 0, z: 0, w: 0}
+    - {x: 2, y: 0, z: 0, w: 0}
+    rewards: []
+  - id: 1
+    name: Search a job
+    icon: {fileID: 0}
+    description: you make me spend money and now you need to go and search a job
+    appearCondition: []
+    objectifs:
+    - {x: 2, y: 0, z: 0, w: 0}
+    - {x: 1, y: 0, z: 0, w: 0}
+    - {x: 1, y: 0, z: 0, w: 0}
+    rewards: []
