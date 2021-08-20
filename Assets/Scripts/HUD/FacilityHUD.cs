@@ -141,17 +141,18 @@ public class FacilityHUD : MonoBehaviour
         if (action == null)
             return;
 
-        Debug
+        Debug.Log("Je suis ici");
         switch (action[actionIndex].action)
         {
             case DataEnum.PlayerAction.GetJob:
 
-                if (GameManager.dataSave.player.currentDayAction <= 0)
+                if (GameManager.dataSave.player.energy <= 0)
                     return;
 
                 if (GameManager.dataSave.player.CanAskJob(idFacility))
                 {
                     GameManager.dataSave.player.playerJobs.Add(idFacility);
+                    GameManager.dataSave.player.energy--;
                 }
 
                 break;
@@ -160,11 +161,11 @@ public class FacilityHUD : MonoBehaviour
                 ShopHud.Instance.OpenShop(action[actionIndex].parameter);
                 break;
             case DataEnum.PlayerAction.Rob:
-                if (GameManager.dataSave.player.currentDayAction <= 0)
+                if (GameManager.dataSave.player.energy <= 0)
                     return;
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                GameManager.dataSave.player.currentDayAction--;
+                GameManager.dataSave.player.energy--;
                 break;
             case DataEnum.PlayerAction.Chat:
                 DialogData dialog = GameManager.GetRandomDialog();
@@ -179,26 +180,26 @@ public class FacilityHUD : MonoBehaviour
                 }
                 break;
             case DataEnum.PlayerAction.Hack:
-                if (GameManager.dataSave.player.currentDayAction <= 0)
+                if (GameManager.dataSave.player.energy <= 0)
                     return;
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                GameManager.dataSave.player.currentDayAction--;
+                GameManager.dataSave.player.energy--;
 
                 break;
             case DataEnum.PlayerAction.Work:
-                if (GameManager.dataSave.player.currentDayAction <= 0)
+                if (GameManager.dataSave.player.energy <= 0)
                     return;
 
                 if(GameManager.dataSave.player.CanWork(idFacility))
                 {
                     GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                    GameManager.dataSave.player.currentDayAction--;
+                    GameManager.dataSave.player.energy--;
                 }
 
                 break;
             case DataEnum.PlayerAction.GetPromotion:
-                if (GameManager.dataSave.player.currentDayAction <= 0)
+                if (GameManager.dataSave.player.energy <= 0)
                     return;
                 break;
             case DataEnum.PlayerAction.Sleep:

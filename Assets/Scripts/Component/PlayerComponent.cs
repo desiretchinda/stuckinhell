@@ -11,6 +11,8 @@ public class PlayerComponent : CharacterComponent
 
     public NpcComponent currentTalkingNpc;
 
+    public FacilityComponent currentFrontFacility;
+
     RaycastHit hit;
 
     Ray ray;

@@ -15,7 +15,7 @@ public class VehicleManager : MonoBehaviour
     /// <summary>
     /// Differents possible spawnplaces
     /// </summary>
-    public List<GameObject> spawnPlaces = new List<GameObject>();
+    public List<SpawnPlace> spawnPlaces = new List<SpawnPlace>();
 
 
     /// <summary>
@@ -84,7 +84,7 @@ public class VehicleManager : MonoBehaviour
             {
 
                 indexSpawnPlace = Random.Range(0, spawnPlaces.Count);
-                SetUpVehicle(GetAvailableVehicle(), spawnPlaces[indexSpawnPlace], spawnPlacesTargetDirection[Random.Range(0, spawnPlacesTargetDirection.Count)]);
+                SetUpVehicle(GetAvailableVehicle(), spawnPlaces[indexSpawnPlace]);
 
                 counterDelay = delaySpaw;
 
@@ -126,7 +126,7 @@ public class VehicleManager : MonoBehaviour
     /// <param name="spawnVehicle"></param>
     /// <param name="spawnPlace"></param>
     /// <param name="direction"></param>
-    public void SetUpVehicle(VehicleComponent spawnVehicle, GameObject spawnPlace, DataEnum.PossibleDirection direction)
+    public void SetUpVehicle(VehicleComponent spawnVehicle, SpawnPlace spawnPlace)
     {
         if (!spawnVehicle)
             return;
@@ -139,7 +139,7 @@ public class VehicleManager : MonoBehaviour
         if (spawnVehicle.spRender)
             spawnVehicle.spRender.sprite = spawnVehicle.spSide;
 
-        switch (direction)
+        switch (spawnPlace.nextDirection)
         {
             case DataEnum.PossibleDirection.Up:
                 spawnVehicle.direction = Vector3.up;

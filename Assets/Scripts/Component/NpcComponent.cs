@@ -74,7 +74,7 @@ public class NpcComponent : CharacterComponent
 
         counterRestTime = restTime;
         counterWalkTime = walkTime;
-        movementSpeed = Random.Range(0.2f, 1.5f);
+        movementSpeed = Random.Range(1f, 3f);
 
         ChangeDirection();
     }
@@ -187,11 +187,13 @@ public class NpcComponent : CharacterComponent
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player") && !PlayerComponent.Instance.currentTalkingNpc)
         {
             npcDialog = GameManager.GetRandomDialog();
             rigbody.mass = 1000;
             PlayerComponent.Instance.currentTalkingNpc = this;
+            if (GameManager.Instance.btntalk)
+                GameManager.Instance.btntalk.gameObject.SetActive(true);
             FlipToDirection(collision.collider.transform.position);
             //PlayerComponent.Instance.RotateTowardDirection(transform.position, true);
             movement = Vector2.zero;
@@ -217,10 +219,12 @@ public class NpcComponent : CharacterComponent
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player") && PlayerComponent.Instance.currentTalkingNpc)
         {
             rigbody.mass = 1;
             PlayerComponent.Instance.currentTalkingNpc = null;
+            if (GameManager.Instance.btntalk)
+                GameManager.Instance.btntalk.gameObject.SetActive(false);
             ChangeDirection();
         }
     }

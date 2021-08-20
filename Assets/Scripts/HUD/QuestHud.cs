@@ -111,6 +111,8 @@ public class QuestHud : MonoBehaviour
         if (tmpQuest != null)
         {
             GameManager.dataSave.player.activeQuest.Add(tmpQuest.id);
+            GameManager.dataSave.player.energy--;
+
         }
             
         OnBtnLeave();

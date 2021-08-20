@@ -79,7 +79,7 @@ public class ShopItemList : MonoBehaviour
     /// </summary>
     public void onBtnTry()
     {
-
+        GameManager.dataSave.player.energy--;
     }
 
     /// <summary>
@@ -94,6 +94,7 @@ public class ShopItemList : MonoBehaviour
         if (GameManager.dataSave.player.RemoveMoney(tmpData.price))
         {
             GameManager.dataSave.player.inventory.Add(tmpData);
+            GameManager.dataSave.player.energy--;
         }
 
     }

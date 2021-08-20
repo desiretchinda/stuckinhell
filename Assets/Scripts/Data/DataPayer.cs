@@ -16,11 +16,6 @@ public class DataPlayer : BaseData
     public float health;
 
     /// <summary>
-    /// Player's health
-    /// </summary>
-    public float energy;
-
-    /// <summary>
     /// Player money in bank
     /// </summary>
     public float bankMoney;
@@ -57,7 +52,7 @@ public class DataPlayer : BaseData
     /// </summary>
     public List<int> playerJobs = new List<int>();
 
-    public int currentDayAction;
+    public int energy;
 
     public float TotalMoney()
     {
@@ -85,7 +80,7 @@ public class DataPlayer : BaseData
 
     public void RemoveEnergy(float value)
     {
-        energy -= value;
+        energy -= (int)value;
 
         if (energy < 0)
             energy = 0;
@@ -93,7 +88,7 @@ public class DataPlayer : BaseData
 
     public void AddEnergy(float value)
     {
-        energy += value;
+        energy += (int)value;
 
     }
 

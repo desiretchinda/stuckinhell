@@ -10,9 +10,10 @@ public class HUDStat : MonoBehaviour
     public static HUDStat Instance;
 
     public TextMeshProUGUI txtMoney;
-    
+
     public TextMeshProUGUI txtEnergy;
 
+    public TextMeshProUGUI txtCurrentDay;
 
     public Button btnInventory;
 
@@ -21,6 +22,8 @@ public class HUDStat : MonoBehaviour
     float prevMoney = -1;
 
     float prevEnegy = -1;
+
+    float prevDay = -1;
 
     private void Awake()
     {
@@ -49,13 +52,17 @@ public class HUDStat : MonoBehaviour
     {
         InventoryHUD.Instance.OpenUI();
     }
-    
+
     public void RefreshHUD()
     {
         if (txtEnergy && prevEnegy != GameManager.dataSave.player.energy)
             txtEnergy.text = "" + GameManager.dataSave.player.energy;
 
         if (txtMoney && prevMoney != GameManager.dataSave.player.TotalMoney())
-            txtMoney.text = "" + GameManager.dataSave.player.TotalMoney();
+            txtMoney.text = "" + GameManager.dataSave.player.TotalMoney() + "$";
+
+        if (txtCurrentDay && prevDay != GameManager.dataSave.player.currentDay)
+            txtCurrentDay.text = "" + GameManager.dataSave.player.currentDay;
+
     }
 }

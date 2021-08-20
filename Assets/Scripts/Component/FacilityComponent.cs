@@ -14,22 +14,15 @@ public class FacilityComponent : MonoBehaviour
     public string welcomeText;
 
     public Sprite background;
-       
+
     public AudioClip bgm;
 
     public List<PlayerAction> possibleAction = new List<PlayerAction>();
 
-    public UnityEngine.UI.Button btnOpen;
-
 
     private void Start()
     {
-        if (btnOpen)
-        {
-            btnOpen.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = nameFacility;
-            btnOpen.onClick.AddListener(OpenFacility);
-        }
-           
+
     }
 
     /// <summary>
@@ -38,6 +31,26 @@ public class FacilityComponent : MonoBehaviour
     public void OpenFacility()
     {
         FacilityHUD.Instance.DisplayFacility(idFacility, nameFacility, welcomeText, background, bgm, possibleAction);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            PlayerComponent.Instance.currentFrontFacility = this;
+            if (GameManager.Instance.btnEnter)
+                GameManager.Instance.btnEnter.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            PlayerComponent.Instance.currentFrontFacility = null;
+            if (GameManager.Instance.btnEnter)
+                GameManager.Instance.btnEnter.gameObject.SetActive(false);
+        }
     }
 
 }

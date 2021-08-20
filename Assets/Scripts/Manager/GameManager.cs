@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Component that manage all the game
@@ -9,10 +10,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public Button btntalk;
+
+    public Button btnEnter;
+
     /// <summary>
     /// Max time in second we c&an have in a day
     /// </summary>
-    public static int maxDayAction = 6;
+    public static int maxDayAction = 20;
 
     /// <summary>
     /// Variable that contains the current state of the game data that need svae
@@ -62,6 +67,30 @@ public class GameManager : MonoBehaviour
         {
             Newgame();
         }
+
+        StartGame();
+
+        if (btnEnter)
+        {
+            btnEnter.onClick.AddListener(OnEnterFacility);
+            btnEnter.gameObject.SetActive(false);
+        }
+
+        if (btntalk)
+        {
+            btntalk.onClick.AddListener(OnTalk);
+            btntalk.gameObject.SetActive(false);
+        }
+    }
+
+    public void OnEnterFacility()
+    {
+
+    }
+
+    public void OnTalk()
+    {
+
     }
 
     // Start is called before the first frame update
@@ -93,7 +122,7 @@ public class GameManager : MonoBehaviour
     public static void NexDay()
     {
         dataSave.player.currentDay++;
-        dataSave.player.currentDayAction = maxDayAction;
+        dataSave.player.energy = maxDayAction;
     }
 
     /// <summary>
@@ -103,6 +132,7 @@ public class GameManager : MonoBehaviour
     {
         dataSave = new SaveData();
         dataSave.player = GetPlayerData();
+        dataSave.player.energy = maxDayAction;
     }
 
     /// <summary>
@@ -249,7 +279,7 @@ public class GameManager : MonoBehaviour
 
             shopCacheDatabase = database.shopDatabase;
         }
-        
+
         if (shopCacheDatabase == null)
             return null;
 
