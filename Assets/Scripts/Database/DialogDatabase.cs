@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 /// <summary>
-/// Class to store vehicle database in our system
+/// Class to store dialog database in our system
 /// </summary>
 public class DialogDatabase : ScriptableObject
 {

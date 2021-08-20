@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     /// <summary>
+    /// Max time in second we c&an have in a day
+    /// </summary>
+    public static int maxDayAction = 6;
+
+    /// <summary>
     /// Variable that contains the current state of the game data that need svae
     /// </summary>
     public static SaveData dataSave = new SaveData();
@@ -41,6 +46,11 @@ public class GameManager : MonoBehaviour
     /// quest databse cache
     /// </summary>
     public static List<DataQuest> questCacheDatabase = new List<DataQuest>();
+
+    /// <summary>
+    /// shop databse cache
+    /// </summary>
+    public static List<ShopData> shopCacheDatabase = new List<ShopData>();
 
 
     private void Awake()
@@ -75,6 +85,15 @@ public class GameManager : MonoBehaviour
         {
             Newgame();
         }
+    }
+
+    /// <summary>
+    /// Pass to nexDay;
+    /// </summary>
+    public static void NexDay()
+    {
+        dataSave.player.currentDay++;
+        dataSave.player.currentDayAction = maxDayAction;
     }
 
     /// <summary>
@@ -188,7 +207,7 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Database function to get a item from the database
+    /// Database function to get a quest from the database
     /// </summary>
     /// <param name="id">Item ID</param>
     /// <returns></returns>
@@ -213,6 +232,33 @@ public class GameManager : MonoBehaviour
 
 
         return questCacheDatabase.Find(x => (x.id == id));
+    }
+
+    /// <summary>
+    /// Database function to get a shop from the database
+    /// </summary>
+    /// <param name="id">Item ID</param>
+    /// <returns></returns>
+    public static ShopData GetShop(int id)
+    {
+        if (shopCacheDatabase == null || shopCacheDatabase.Count <= 0)
+        {
+            ShopDatabase database = Resources.Load<ShopDatabase>("shop_database");
+            if (database == null)
+                return null;
+
+            shopCacheDatabase = database.shopDatabase;
+        }
+        
+        if (shopCacheDatabase == null)
+            return null;
+
+        if (shopCacheDatabase.Count <= id)
+            return null;
+
+
+
+        return shopCacheDatabase.Find(x => (x.id == id));
     }
 
     /// <summary>

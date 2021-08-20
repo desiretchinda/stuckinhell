@@ -37,12 +37,30 @@ public class PlayerComponent : CharacterComponent
 
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        if(Input.GetKeyUp(KeyCode.I))
+        {
+            QuestListhud.Instance.openHud();
+        }
+
         if (currentTalkingNpc && Input.GetKeyUp(KeyCode.E))
         {
-            currentTalkingNpc.DisplayDialog();
+            if(!currentTalkingNpc.DisplayQuest())
+            {
+                currentTalkingNpc.DisplayDialog();
+            }
+            
         }
 
         base.Update();
+    }
+
+
+    /// <summary>
+    /// Function to open the player inventory
+    /// </summary>
+    public void OpenInventory()
+    {
+        InventoryHUD.Instance.OpenUI();
     }
 
 }

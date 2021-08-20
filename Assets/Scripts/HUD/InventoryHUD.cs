@@ -17,6 +17,7 @@ public class InventoryHUD : MonoBehaviour
         if (closeBtn)
             closeBtn.onClick.AddListener(CloseUI);
         CloseUI();
+
     }
 
     public void OpenUI()

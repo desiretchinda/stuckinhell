@@ -32,6 +32,7 @@ public static class DataEnum
     /// </summary>
     public enum PlayerAction
     {
+        GetJob,
         OrderItem,
         Rob,
         Chat,
@@ -58,6 +59,7 @@ public static class DataEnum
     /// </summary>
     public enum ItemTipe
     {
+        NoClassified,
         Consumable,
         Cloth,
         NonConsumable,
@@ -70,6 +72,7 @@ public static class DataEnum
     {
         AddMoney,
         AddEnergy,
+        AddItem,
     }
 
     /// <summary>

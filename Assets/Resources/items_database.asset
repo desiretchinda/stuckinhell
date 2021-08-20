@@ -14,6 +14,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDatabase:
   - id: 0
+    name: Red shirt
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 2
+  - id: 1
+    name: Green shirt
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 2
+  - id: 2
+    name: Yellow shirt
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 2
+  - id: 3
+    name: Pink shirt
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 2
+  - id: 4
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+  - id: 5
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+  - id: 6
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+  - id: 7
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+  - id: 8
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+  - id: 9
     name: 
     icon: {fileID: 0}
     price: 0

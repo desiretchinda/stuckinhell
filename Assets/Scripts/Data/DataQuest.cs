@@ -29,11 +29,9 @@ public class DataQuest : BaseData
     public List<Vector4> objectifs = new List<Vector4>();
 
     /// <summary>
-    /// objectifs of this quest
-    /// x: reward type(equivalent in DataEnum.RewardTipe)
-    /// y,z,w: param of the reward
+    /// rewards of this quest
     /// </summary>
-    public List<Vector4> rewards = new List<Vector4>();
+    public List<PlayerReward> rewards = new List<PlayerReward>();
 
     /// <summary>
     /// Fonction to test condition if this quest can appear iingame
@@ -87,12 +85,9 @@ public class DataQuest : BaseData
     {
         for (int i = 0, length = rewards.Count; i < length; i++)
         {
-            switch ((DataEnum.RewardTipe)rewards[i].x)
+           if(rewards[i] != null)
             {
-                case DataEnum.RewardTipe.AddMoney:
-                    break;
-                case DataEnum.RewardTipe.AddEnergy:
-                    break;
+                rewards[i].Reward();
             }
         }
 

@@ -51,6 +51,11 @@ public class NpcComponent : CharacterComponent
 
     List<DataEnum.PossibleDirection> newPossibleDirection = new List<DataEnum.PossibleDirection>();
 
+    /// <summary>
+    /// Quest that this npc can give to the player
+    /// </summary>
+    public List<int> idQuests = new List<int>();
+
     private DialogData npcDialog = null;
     new void Awake()
     {
@@ -161,6 +166,23 @@ public class NpcComponent : CharacterComponent
     public void DisplayDialog()
     {
         DialogHUD.Instance.DisplayDialog(npcDialog, dialogFace);
+    }
+
+
+    /// <summary>
+    /// Display a dialog on this NPC head
+    /// </summary>
+    public bool DisplayQuest()
+    {
+        for (int i = 0, length = idQuests.Count; i < length; i++)
+        {
+            if (!GameManager.dataSave.player.activeQuest.Contains(idQuests[i]) && !GameManager.dataSave.player.completedQuest.Contains(idQuests[i]))
+            {
+                return QuestHud.Instance.DisplayQuest(idQuests[i]);
+            }
+            
+        }
+        return false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -58,13 +58,13 @@ public class QuestHud : MonoBehaviour
 
     }
 
-    
-    public void DisplayQuest(int questID)
+
+    public bool DisplayQuest(int questID)
     {
         tmpQuest = GameManager.GetQuest(questID);
 
         if (tmpQuest == null)
-            return;
+            return false;
 
         if (txt_name)
             txt_name.text = tmpQuest.name;
@@ -78,32 +78,41 @@ public class QuestHud : MonoBehaviour
             if (txt_objectifs[i])
                 txt_objectifs[i].gameObject.SetActive(false);
 
-            switch ((DataEnum.ObjectifTipe)tmpQuest.objectifs[i].x)
+            if(tmpQuest.objectifs.Count > i)
             {
-                case DataEnum.ObjectifTipe.TalkToNpc:
-                    if (txt_objectifs[i])
-                        txt_objectifs[i].gameObject.SetActive(true);
-                    txt_objectifs[i].text = "Talk to NPC";
-                    break;
-                case DataEnum.ObjectifTipe.GetItem:
-                    if (txt_objectifs[i])
-                        txt_objectifs[i].gameObject.SetActive(true);
-                    txt_objectifs[i].text = "Get Item";
-                    break;
-                case DataEnum.ObjectifTipe.KillDemon:
-                    if (txt_objectifs[i])
-                        txt_objectifs[i].gameObject.SetActive(true);
-                    txt_objectifs[i].text = "Kill demon";
-                    break;
+                switch ((DataEnum.ObjectifTipe)tmpQuest.objectifs[i].x)
+                {
+                    case DataEnum.ObjectifTipe.TalkToNpc:
+                        if (txt_objectifs[i])
+                            txt_objectifs[i].gameObject.SetActive(true);
+                        txt_objectifs[i].text = "Talk to NPC";
+                        break;
+                    case DataEnum.ObjectifTipe.GetItem:
+                        if (txt_objectifs[i])
+                            txt_objectifs[i].gameObject.SetActive(true);
+                        txt_objectifs[i].text = "Get Item";
+                        break;
+                    case DataEnum.ObjectifTipe.KillDemon:
+                        if (txt_objectifs[i])
+                            txt_objectifs[i].gameObject.SetActive(true);
+                        txt_objectifs[i].text = "Kill demon";
+                        break;
+                }
             }
+
         }
 
         gameObject.SetActive(true);
+        return true;
     }
 
     public void OnBtnAccept()
     {
-
+        if (tmpQuest != null)
+        {
+            GameManager.dataSave.player.activeQuest.Add(tmpQuest.id);
+        }
+            
         OnBtnLeave();
     }
 

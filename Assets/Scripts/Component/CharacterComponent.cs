@@ -45,16 +45,6 @@ public class CharacterComponent : MonoBehaviour
     protected Vector2 nextPos;
 
     /// <summary>
-    /// Current angle between player and his next destination
-    /// </summary>
-    protected float angle;
-
-    /// <summary>
-    /// current player's rotation
-    /// </summary>
-    protected Quaternion rotation;
-
-    /// <summary>
     /// Boolean the definie if the character can move or not
     /// </summary>
     public bool preventMove;
@@ -123,12 +113,6 @@ public class CharacterComponent : MonoBehaviour
 
             if (dir.x >= 0)
                 transform.localScale = new Vector3(1, 1);
-            ////get the angle from current direction facing to desired destination
-            //angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            ////set the angle into a quaternion + sprite offset depending on initial sprite facing direction
-            //rotation = Quaternion.Euler(new Vector3(0, 0, angle + angleOffset));
-
-            //transform.rotation = rotation;
         }
     }
 

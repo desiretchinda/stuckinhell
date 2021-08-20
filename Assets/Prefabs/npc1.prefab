@@ -453,6 +453,7 @@ MonoBehaviour:
   restTime: 2
   walkTime: 5
   dialogFace: {fileID: 0}
+  idQuests: 0000000001000000
 --- !u!210 &4808096294568796033
 SortingGroup:
   m_ObjectHideFlags: 0
