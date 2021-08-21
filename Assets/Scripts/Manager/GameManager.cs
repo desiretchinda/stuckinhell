@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -85,24 +86,31 @@ public class GameManager : MonoBehaviour
 
     public void OnEnterFacility()
     {
-
+        if (PlayerComponent.Instance.currentFrontFacility)
+        {
+            PlayerComponent.Instance.currentFrontFacility.OpenFacility();
+            if (btnEnter)
+                btnEnter.gameObject.SetActive(false);
+        }
     }
 
     public void OnTalk()
     {
+        if (!PlayerComponent.Instance.currentTalkingNpc)
+            return;
 
-    }
+        if(!dataSave.player.npcTalkTo.Contains(PlayerComponent.Instance.currentTalkingNpc.id))
+        {
+            dataSave.player.npcTalkTo.Add(PlayerComponent.Instance.currentTalkingNpc.id);
+        }
+        if (!PlayerComponent.Instance.currentTalkingNpc.DisplayQuest())
+        {
+            PlayerComponent.Instance.currentTalkingNpc.DisplayDialog();
 
-    // Start is called before the first frame update
-    void Start()
-    {
+        }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (btntalk)
+            btntalk.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -123,6 +131,7 @@ public class GameManager : MonoBehaviour
     {
         dataSave.player.currentDay++;
         dataSave.player.energy = maxDayAction;
+        SaveGame();
     }
 
     /// <summary>
@@ -140,7 +149,26 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public static bool LoadGame()
     {
-        return false;
+        if (dataSave == null)
+            dataSave = new SaveData();
+
+        string nameSave = "StuckOnHellSaves";
+        string filePath = Path.Combine(Application.persistentDataPath, nameSave);
+        string dataAsJson;
+
+        if (File.Exists(filePath))
+        {
+
+            dataAsJson = File.ReadAllText(filePath);
+            dataSave = JsonUtility.FromJson<SaveData>(dataAsJson);
+            
+            return true;
+        }
+        else
+        {
+            return false;
+
+        }
     }
 
     /// <summary>
@@ -148,7 +176,19 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public static void SaveGame()
     {
+        if (dataSave == null)
+            dataSave = new SaveData();
 
+        dataSave.lastPosition = PlayerComponent.Instance.transform.position;
+        string nameSave = "StuckOnHellSaves";
+        string filePath = Path.Combine(Application.persistentDataPath, nameSave);
+
+
+        if (!File.Exists(filePath))
+            File.Create(filePath).Dispose();
+
+        string dataAsJson = JsonUtility.ToJson(dataSave, true);
+        File.WriteAllText(filePath, dataAsJson);
     }
 
     /// <summary>

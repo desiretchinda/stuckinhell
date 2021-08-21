@@ -14,7 +14,7 @@ public class ItemDatabase : ScriptableObject
 #if UNITY_EDITOR
 
     [MenuItem("StuckOnHell DATABSE/create item database")]
-    public static ItemDatabase Create()
+    public static void Create()
     {
 
         ItemDatabase asset = ScriptableObject.CreateInstance<ItemDatabase>();
@@ -22,7 +22,6 @@ public class ItemDatabase : ScriptableObject
         AssetDatabase.CreateAsset(asset, "Assets/Resources/items_database.asset");
         Selection.activeObject = asset;
         AssetDatabase.SaveAssets();
-        return asset;
     }
 
 #endif

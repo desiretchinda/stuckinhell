@@ -27,6 +27,8 @@ public class PlayerComponent : CharacterComponent
 
     new void Start()
     {
+        if (GameManager.dataSave.lastPosition != Vector3.zero)
+           transform.position = GameManager.dataSave.lastPosition;
         base.Start();
     }
 
@@ -38,20 +40,6 @@ public class PlayerComponent : CharacterComponent
             return;
 
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        if(Input.GetKeyUp(KeyCode.I))
-        {
-            QuestListhud.Instance.openHud();
-        }
-
-        if (currentTalkingNpc && Input.GetKeyUp(KeyCode.E))
-        {
-            if(!currentTalkingNpc.DisplayQuest())
-            {
-                currentTalkingNpc.DisplayDialog();
-            }
-            
-        }
 
         base.Update();
     }

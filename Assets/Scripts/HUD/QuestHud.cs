@@ -78,26 +78,11 @@ public class QuestHud : MonoBehaviour
             if (txt_objectifs[i])
                 txt_objectifs[i].gameObject.SetActive(false);
 
-            if(tmpQuest.objectifs.Count > i)
+            if (tmpQuest.objectifs.Count > i)
             {
-                switch ((DataEnum.ObjectifTipe)tmpQuest.objectifs[i].x)
-                {
-                    case DataEnum.ObjectifTipe.TalkToNpc:
-                        if (txt_objectifs[i])
-                            txt_objectifs[i].gameObject.SetActive(true);
-                        txt_objectifs[i].text = "Talk to NPC";
-                        break;
-                    case DataEnum.ObjectifTipe.GetItem:
-                        if (txt_objectifs[i])
-                            txt_objectifs[i].gameObject.SetActive(true);
-                        txt_objectifs[i].text = "Get Item";
-                        break;
-                    case DataEnum.ObjectifTipe.KillDemon:
-                        if (txt_objectifs[i])
-                            txt_objectifs[i].gameObject.SetActive(true);
-                        txt_objectifs[i].text = "Kill demon";
-                        break;
-                }
+                if (txt_objectifs[i])
+                    txt_objectifs[i].gameObject.SetActive(true);
+                txt_objectifs[i].text = tmpQuest.objectifs[i].text;
             }
 
         }
@@ -114,7 +99,7 @@ public class QuestHud : MonoBehaviour
             GameManager.dataSave.player.energy--;
 
         }
-            
+
         OnBtnLeave();
     }
 

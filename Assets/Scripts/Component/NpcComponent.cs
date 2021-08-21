@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public class NpcComponent : CharacterComponent
 {
+    public int id;
+
     /// <summary>
     /// NPC possible direction on the map
     /// </summary>
@@ -57,10 +59,14 @@ public class NpcComponent : CharacterComponent
     public List<int> idQuests = new List<int>();
 
     private DialogData npcDialog = null;
+
     new void Awake()
     {
+
+
         base.Awake();
     }
+
 
     new void Start()
     {

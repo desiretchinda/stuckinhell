@@ -14,7 +14,7 @@ public class QuestDatabase : ScriptableObject
 #if UNITY_EDITOR
 
     [MenuItem("StuckOnHell DATABSE/create quest database")]
-    public static QuestDatabase Create()
+    public static void Create()
     {
 
         QuestDatabase asset = ScriptableObject.CreateInstance<QuestDatabase>();
@@ -22,7 +22,6 @@ public class QuestDatabase : ScriptableObject
         AssetDatabase.CreateAsset(asset, "Assets/Resources/quests_database.asset");
         Selection.activeObject = asset;
         AssetDatabase.SaveAssets();
-        return asset;
     }
 
 #endif

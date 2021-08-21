@@ -14,62 +14,372 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDatabase:
   - id: 0
-    name: Red shirt
-    icon: {fileID: 0}
-    price: 0
+    name: Red sap
+    icon: {fileID: 21300000, guid: cfa37ee9fbba7e04a963f1a8df752665, type: 3}
+    price: 15000
     collectable: 0
     tipe: 2
+    shirt: {fileID: 21300000, guid: c79993f238acb7a44a7aba45f80efdd5, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 1
-    name: Green shirt
-    icon: {fileID: 0}
-    price: 0
+    name: Green sap
+    icon: {fileID: 21300000, guid: 1e9d9ceba80080e4c8ee55e43a0e3067, type: 3}
+    price: 40000
     collectable: 0
     tipe: 2
+    shirt: {fileID: 21300000, guid: 3216681e13f65564f8c0c19750a36e57, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 2
-    name: Yellow shirt
-    icon: {fileID: 0}
-    price: 0
+    name: Yellow sap
+    icon: {fileID: 21300000, guid: d840d284d61f06846950b33a051efed3, type: 3}
+    price: 55000
     collectable: 0
     tipe: 2
+    shirt: {fileID: 21300000, guid: 0fab20f89e739394682ec0fdb3d881b6, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 3
-    name: Pink shirt
-    icon: {fileID: 0}
-    price: 0
+    name: Pink sap
+    icon: {fileID: 21300000, guid: 24d7da5f9a3ef8944a37a2c4d4b6a607, type: 3}
+    price: 60000
     collectable: 0
     tipe: 2
+    shirt: {fileID: 21300000, guid: d459ded944f8bde40856d67dc1253ee6, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 4
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: Orange sap
+    icon: {fileID: 21300000, guid: 5045ca217af41854aafa1e030f776fe4, type: 3}
+    price: 70000
     collectable: 0
-    tipe: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: df16c5f51cecac645ad47c45c5fb6922, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 5
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: The Flying Frog
+    icon: {fileID: 21300000, guid: 43ee69d1176bc85499e3ddbe90b50841, type: 3}
+    price: 5000
     collectable: 0
-    tipe: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: a43777ab7a1920f4f9f596f191f76c50, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 6
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: The Happy
+    icon: {fileID: 21300000, guid: 6cd7811f7ff337147b17265849555555, type: 3}
+    price: 55000
     collectable: 0
-    tipe: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: b33b90b4ea4b0ed4a8e46b60d6adcbcd, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 7
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: The Dapper
+    icon: {fileID: 21300000, guid: ff1edcc96f00bd34f99533b466feeecc, type: 3}
+    price: 60000
     collectable: 0
-    tipe: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: 71ba107d2f03fbf48adf7e8ea91f50a2, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 8
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: The Hollow
+    icon: {fileID: 21300000, guid: d123d3cd493ae4849816868442eb9ddf, type: 3}
+    price: 70000
     collectable: 0
-    tipe: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: 5bbb52ea02b3cdd4097d3d87d6105217, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   - id: 9
-    name: 
-    icon: {fileID: 0}
-    price: 0
+    name: Perfecto
+    icon: {fileID: 21300000, guid: 993966d2fb1c2124fbf84d6f765a2231, type: 3}
+    price: 100000
+    collectable: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: 1fe260f4eb7f75341ba31b1a79ede062, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  - id: 10
+    name: Brooklyn
+    icon: {fileID: 21300000, guid: cee382b160d27424fb3198ce5636e4fb, type: 3}
+    price: 120000
+    collectable: 0
+    tipe: 2
+    shirt: {fileID: 21300000, guid: 06f6bcb741532834ea7e550f31d684b5, type: 3}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  - id: 11
+    name: Jessa Rhodes
+    icon: {fileID: 21300000, guid: 68030217c3881e44b867f8192ce5cf10, type: 3}
+    price: 50000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 5
+      remove: 1
+  - id: 12
+    name: Riley Reid
+    icon: {fileID: 21300000, guid: c4e7c2c1ffc26d349acdc2efa438ec60, type: 3}
+    price: 30000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 3
+      remove: 1
+  - id: 13
+    name: Autumn Falls
+    icon: {fileID: 21300000, guid: 1835679accd5d1c42a68ad8e2c4a7173, type: 3}
+    price: 25000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 3
+      remove: 1
+  - id: 14
+    name: Valentina Nappi
+    icon: {fileID: 21300000, guid: 1e127b8a546e6ab41885187c4e751806, type: 3}
+    price: 60000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 10
+      remove: 1
+  - id: 15
+    name: Gabbie Carter
+    icon: {fileID: 21300000, guid: af24b2984a068ab4c885a7d132ebd23b, type: 3}
+    price: 40000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 6
+      remove: 1
+  - id: 16
+    name: Liya Silver
+    icon: {fileID: 21300000, guid: a1d5b9c48a472944b9de938f7e79b62a, type: 3}
+    price: 35000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 0
+      parameter: 3
+      remove: 1
+  - id: 17
+    name: kondre
+    icon: {fileID: 21300000, guid: 0e3417cafefc60a40826946c898beb77, type: 3}
+    price: 5000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 1
+      remove: 0
+  - id: 18
+    name: "Ndol\xE9"
+    icon: {fileID: 21300000, guid: 589bd7e92d7f57240b037f267346a9f1, type: 3}
+    price: 10000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 1
+      remove: 0
+  - id: 19
+    name: Taro
+    icon: {fileID: 21300000, guid: ecf025d9d34885649927dc671c378b0b, type: 3}
+    price: 15000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 2
+      remove: 0
+  - id: 20
+    name: Koki
+    icon: {fileID: 21300000, guid: 8542d3cad7f66b0498b8befff7d3fe24, type: 3}
+    price: 20000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 3
+      remove: 0
+  - id: 21
+    name: Corn Tchap
+    icon: {fileID: 21300000, guid: 3187e52f51a735f48a18d094c32b7845, type: 3}
+    price: 25000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 4
+      remove: 0
+  - id: 22
+    name: Folong
+    icon: {fileID: 21300000, guid: f27be0dc3727c2d4fbff0387cf7d87a7, type: 3}
+    price: 30000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 5
+      remove: 0
+  - id: 23
+    name: Beaufort
+    icon: {fileID: 21300000, guid: 3a3eb091ddc99874d99a67a10583e4c3, type: 3}
+    price: 5000
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 2
+      remove: 0
+  - id: 24
+    name: 33 Export
+    icon: {fileID: 21300000, guid: 948633980a07e574d98347503f2543f4, type: 3}
+    price: 15000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  - id: 25
+    name: Castel Beer
+    icon: {fileID: 21300000, guid: ecb6d5e2c89075e408809f7de8703d36, type: 3}
+    price: 20000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 3
+      remove: 0
+  - id: 26
+    name: "M\xFCtzig"
+    icon: {fileID: 21300000, guid: 44c987d37958fe34d87c2b5a7eb7a8a7, type: 3}
+    price: 35000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 4
+      remove: 0
+  - id: 27
+    name: Kadji
+    icon: {fileID: 21300000, guid: 3364e428464e8b042a4e3cf378de8b5b, type: 3}
+    price: 50000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 7
+      remove: 0
+  - id: 28
+    name: Doppel
+    icon: {fileID: 21300000, guid: 3b2e10d1f6c800549b9e70b862df2900, type: 3}
+    price: 15000
+    collectable: 0
+    tipe: 1
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward:
+    - rewardTipe: 1
+      parameter: 3
+      remove: 0

@@ -16,17 +16,13 @@ public class DataQuest : BaseData
 
     /// <summary>
     /// Appear condition of this quest
-    /// x: condition type(equivalent in DataEnum.CondtionTipe)
-    /// y,z,w: param of the condition
     /// </summary>
-    public List<Vector4> appearCondition = new List<Vector4>();
+    public int appearLevel;
 
     /// <summary>
     /// objectifs of this quest
-    /// x: objectifs type(equivalent in DataEnum.ObjectifTipe)
-    /// y,z,w: param of the objectifs
     /// </summary>
-    public List<Vector4> objectifs = new List<Vector4>();
+    public List<QuestObjectif> objectifs = new List<QuestObjectif>();
 
     /// <summary>
     /// rewards of this quest
@@ -39,21 +35,7 @@ public class DataQuest : BaseData
     /// <returns></returns>
     public bool ConditionOk()
     {
-        for (int i = 0, length = appearCondition.Count; i < length; i++)
-        {
-            switch ((DataEnum.ConditionTipe)appearCondition[i].x)
-            {
-                case DataEnum.ConditionTipe.MoneyValue:
-                    break;
-                case DataEnum.ConditionTipe.EnergyValue:
-                    break;
-                case DataEnum.ConditionTipe.HasItem:
-                    break;
-                case DataEnum.ConditionTipe.DemonKill:
-                    break;
-            }
-        }
-        return true;
+        return GameManager.dataSave.player.level >= appearLevel;
     }
 
     /// <summary>
@@ -62,20 +44,45 @@ public class DataQuest : BaseData
     /// <returns></returns>
     public bool ObjectifOk()
     {
+        int nbOk = 0;
+
         for (int i = 0, length = objectifs.Count; i < length; i++)
         {
-            switch ((DataEnum.ObjectifTipe)appearCondition[i].x)
+            switch ((DataEnum.ObjectifTipe)objectifs[i].objectif)
             {
+                case DataEnum.ObjectifTipe.TalkToNumberNpc:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.npcTalkTo.Count >= objectifs[i].parameter;
+                    break;
+                case DataEnum.ObjectifTipe.BuyItem:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.itemBuy.Contains(objectifs[i].parameter);
+                    break;
+                case DataEnum.ObjectifTipe.UseItem:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.itemUse.Contains(objectifs[i].parameter);
+                    break;
+                case DataEnum.ObjectifTipe.BuyNumberItem:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.itemBuy.Count >= objectifs[i].parameter;
+                    break;
+                case DataEnum.ObjectifTipe.UseNumberItem:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.itemUse.Count >= objectifs[i].parameter;
+                    break;
                 case DataEnum.ObjectifTipe.TalkToNpc:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.npcTalkTo.Contains(objectifs[i].parameter);
                     break;
-                case DataEnum.ObjectifTipe.GetItem:
+                case DataEnum.ObjectifTipe.GetNumberWork:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.playerJobs.Count >= objectifs[i].parameter;
                     break;
-                case DataEnum.ObjectifTipe.KillDemon:
+                case DataEnum.ObjectifTipe.GetWorkAt:
+                    objectifs[i].objectifResult = GameManager.dataSave.player.playerJobs.Contains(objectifs[i].parameter);
                     break;
             }
+
+            if (objectifs[i].objectifResult)
+                nbOk++;
         }
 
-        return true;
+
+
+        return nbOk >= objectifs.Count;
     }
 
     /// <summary>
@@ -85,12 +92,25 @@ public class DataQuest : BaseData
     {
         for (int i = 0, length = rewards.Count; i < length; i++)
         {
-           if(rewards[i] != null)
+            if (rewards[i] != null)
             {
                 rewards[i].Reward();
             }
         }
 
+    }
+
+    [System.Serializable]
+    public class QuestObjectif
+    {
+        public DataEnum.ObjectifTipe objectif;
+
+        public string text;
+
+        public int parameter;
+
+        [HideInInspector]
+        public bool objectifResult;
     }
 
 }

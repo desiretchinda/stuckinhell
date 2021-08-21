@@ -55,6 +55,7 @@ public class InventoryElementHUD : MonoBehaviour
         if(current != null)
         {
             current.Use();
+            GameManager.SaveGame();
         }
     }
 }

@@ -41,6 +41,7 @@ public static class DataEnum
         GetPromotion,
         Sleep,
         Dance,
+        borrow
     }
 
     /// <summary>
@@ -80,9 +81,14 @@ public static class DataEnum
     /// </summary>
     public enum ObjectifTipe
     {
+        TalkToNumberNpc,
+        BuyItem,
+        UseItem,
+        BuyNumberItem,
+        UseNumberItem,
         TalkToNpc,
-        GetItem,
-        KillDemon,
+        GetNumberWork,
+        GetWorkAt,
     }
 
     /// <summary>

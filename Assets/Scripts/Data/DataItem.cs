@@ -21,16 +21,34 @@ public class DataItem : BaseData
 
     public DataEnum.ItemTipe tipe;
 
+    [UnityEngine.Header("JUST FOR CLOTHS ITEM")]
+    public UnityEngine.Sprite shirt;
+
+    public UnityEngine.Sprite cap;
+
+    public UnityEngine.Sprite pan;
+
+    public UnityEngine.Sprite shoe;
+
     public List<PlayerReward> reward = new List<PlayerReward>();
 
     public void Use()
     {
+        if(tipe == DataEnum.ItemTipe.Cloth)
+        {
+            GameManager.dataSave.player.currentCloth = id;
+        }
+
         for (int i = 0, length = reward.Count; i < length; i++)
         {
             if(reward[i] != null)
             {
                 reward[i].Reward();
             }
+        }
+        if(!GameManager.dataSave.player.itemUse.Contains(id))
+        {
+            GameManager.dataSave.player.itemUse.Add(id);
         }
     }
 

@@ -64,5 +64,11 @@ public class HUDStat : MonoBehaviour
         if (txtCurrentDay && prevDay != GameManager.dataSave.player.currentDay)
             txtCurrentDay.text = "" + GameManager.dataSave.player.currentDay;
 
+        prevMoney = GameManager.dataSave.player.TotalMoney();
+
+        prevEnegy = GameManager.dataSave.player.energy;
+
+        prevDay = GameManager.dataSave.player.currentDay;
+
     }
 }

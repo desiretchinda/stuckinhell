@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452861841297558403}
   - component: {fileID: 2710899265755578301}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4789944934088012028}
   - component: {fileID: 4149058811460766113}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: char_left_arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319107260242046901}
   - component: {fileID: 2631816515997432764}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: right_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3524721258434797478}
   - component: {fileID: 7201356292146800708}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: char_right_arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,9 +345,9 @@ GameObject:
   - component: {fileID: 8145996705527082209}
   - component: {fileID: 6547194490601279940}
   - component: {fileID: 4192667155166196664}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,6 +450,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preventMove: 0
   currentTalkingNpc: {fileID: 0}
+  currentFrontFacility: {fileID: 0}
 --- !u!210 &4192667155166196664
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -471,7 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4376117337623809279}
   - component: {fileID: 2471907348756000057}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5758330413663677131}
   - component: {fileID: 4355108754888579234}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6441214048629935755}
   - component: {fileID: 6883232075725653924}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: nek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7980208629079234505}
   - component: {fileID: 4007917399366715264}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +801,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3460793658607156802}
   - component: {fileID: 5985575074569120815}
-  m_Layer: 3
+  - component: {fileID: 1808223763}
+  m_Layer: 0
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,6 +879,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1808223763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135070158539889663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b59888d28896644a8f397d7ab1d4774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shirt: {fileID: 0}
+  cap: {fileID: 0}
+  shoe: {fileID: 0}
+  pan: {fileID: 0}
 --- !u!1 &8931331493929006999
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5579827076011200137}
   - component: {fileID: 9074275561730213038}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: left_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

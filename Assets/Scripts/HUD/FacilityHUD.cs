@@ -166,6 +166,7 @@ public class FacilityHUD : MonoBehaviour
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
                 GameManager.dataSave.player.energy--;
+                GameManager.dataSave.player.energy -= 2;
                 break;
             case DataEnum.PlayerAction.Chat:
                 DialogData dialog = GameManager.GetRandomDialog();
@@ -184,14 +185,14 @@ public class FacilityHUD : MonoBehaviour
                     return;
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                GameManager.dataSave.player.energy--;
+                GameManager.dataSave.player.energy -= 2;
 
                 break;
             case DataEnum.PlayerAction.Work:
                 if (GameManager.dataSave.player.energy <= 0)
                     return;
 
-                if(GameManager.dataSave.player.CanWork(idFacility))
+                if (GameManager.dataSave.player.CanWork(idFacility))
                 {
                     GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
                     GameManager.dataSave.player.energy--;
@@ -203,13 +204,19 @@ public class FacilityHUD : MonoBehaviour
                     return;
                 break;
             case DataEnum.PlayerAction.Sleep:
-               
+
                 GameManager.NexDay();
+                break;
+            case DataEnum.PlayerAction.Dance:
+                break;
+            case DataEnum.PlayerAction.borrow:
+                GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
+                GameManager.dataSave.player.energy -= 5;
                 break;
             default:
                 break;
         }
-
+        GameManager.SaveGame();
         HideActions();
         DisplayActions(idFacility, action);
     }

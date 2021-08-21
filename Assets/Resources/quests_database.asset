@@ -14,22 +14,193 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDatabase:
   - id: 0
-    name: Search me this shit
+    name: socialization
     icon: {fileID: 0}
-    description: I just want you to kill grogon
-    appearCondition: []
+    description: Socialize my buddy
+    appearLevel: 0
     objectifs:
-    - {x: 0, y: 0, z: 0, w: 0}
-    - {x: 1, y: 0, z: 0, w: 0}
-    - {x: 2, y: 0, z: 0, w: 0}
-    rewards: []
+    - objectif: 0
+      text: Talk to 3 persons
+      parameter: 3
+      objectifResult: 0
+    - objectif: 3
+      text: Buy 2 items
+      parameter: 2
+      objectifResult: 0
+    - objectif: 6
+      text: Get a job
+      parameter: 1
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 15000
+      remove: 0
+    - rewardTipe: 1
+      parameter: 2
+      remove: 1
+  - id: 1
+    name: Just buy it
+    icon: {fileID: 0}
+    description: Got and spend money
+    appearLevel: 0
+    objectifs:
+    - objectif: 4
+      text: Use 4 items
+      parameter: 4
+      objectifResult: 0
+    - objectif: 2
+      text: wears green sap
+      parameter: 1
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 1
+      parameter: 4
+      remove: 0
   - id: 1
     name: Search a job
     icon: {fileID: 0}
     description: you make me spend money and now you need to go and search a job
-    appearCondition: []
+    appearLevel: 0
     objectifs:
-    - {x: 2, y: 0, z: 0, w: 0}
-    - {x: 1, y: 0, z: 0, w: 0}
-    - {x: 1, y: 0, z: 0, w: 0}
-    rewards: []
+    - objectif: 6
+      text: Get 2 works buddy
+      parameter: 2
+      objectifResult: 0
+    - objectif: 0
+      text: talk 8 persons
+      parameter: 8
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 1
+      parameter: 10
+      remove: 1
+  - id: 1
+    name: Pleasure is the key
+    icon: {fileID: 0}
+    description: go have fun with this girl I advise you
+    appearLevel: 0
+    objectifs:
+    - objectif: 4
+      text: Enjoy with valentina Nappi
+      parameter: 14
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 30000
+      remove: 1
+    - rewardTipe: 1
+      parameter: 20
+      remove: 1
+  - id: 1
+    name: I want to make you shit
+    icon: {fileID: 0}
+    description: Just do what i want
+    appearLevel: 0
+    objectifs:
+    - objectif: 5
+      text: Find this anonymouse person and talk to him
+      parameter: 3
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 50000
+      remove: 0
+  - id: 1
+    name: Become a leviathon
+    icon: {fileID: 0}
+    description: Progress in your life
+    appearLevel: 0
+    objectifs:
+    - objectif: 7
+      text: Find a job at leviathon bar
+      parameter: 8
+      objectifResult: 0
+    - objectif: 0
+      text: Talk 15 persons
+      parameter: 15
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 30000
+      remove: 0
+    - rewardTipe: 1
+      parameter: 20
+      remove: 1
+  - id: 1
+    name: Socialization
+    icon: {fileID: 0}
+    description: Make you shit and talk to person
+    appearLevel: 0
+    objectifs:
+    - objectif: 0
+      text: Talk to 30 persons
+      parameter: 30
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 100000
+      remove: 0
+    - rewardTipe: 1
+      parameter: 50
+      remove: 1
+  - id: 1
+    name: Search a job
+    icon: {fileID: 0}
+    description: Continue searching work
+    appearLevel: 0
+    objectifs:
+    - objectif: 6
+      text: Get 6 jobs
+      parameter: 6
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 0
+      parameter: 30000
+      remove: 0
+    - rewardTipe: 1
+      parameter: 15
+      remove: 1
+  - id: 1
+    name: Look swag
+    icon: {fileID: 0}
+    description: Feel the sapology
+    appearLevel: 0
+    objectifs:
+    - objectif: 1
+      text: Buy the Orange sap
+      parameter: 14
+      objectifResult: 0
+    - objectif: 1
+      text: Buy the dapper
+      parameter: 7
+      objectifResult: 0
+    - objectif: 1
+      text: Buy the Pink sap
+      parameter: 3
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 1
+      parameter: 20
+      remove: 0
+  - id: 1
+    name: Eat and Drink
+    icon: {fileID: 0}
+    description: The title say all so just do it
+    appearLevel: 0
+    objectifs:
+    - objectif: 2
+      text: Go and eat Koki
+      parameter: 20
+      objectifResult: 0
+    - objectif: 2
+      text: Go and Drink Kadji
+      parameter: 27
+      objectifResult: 0
+    - objectif: 2
+      text: Go and Eat Taro
+      parameter: 19
+      objectifResult: 0
+    rewards:
+    - rewardTipe: 1
+      parameter: 10
+      remove: 0

@@ -14,12 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShopDatabase
   shopDatabase:
   - id: 0
-    name: 
+    name: Saplogue
     icon: {fileID: 0}
     clothesShop: 1
-    items: 00000000010000000200000003000000
+    items: 0000000001000000020000000300000004000000
   - id: 1
-    name: 
+    name: Strptease
     icon: {fileID: 0}
     clothesShop: 0
-    items: 040000000500000006000000070000000800000009000000
+    items: 0b0000000c0000000d0000000e0000000f00000010000000
+  - id: 2
+    name: Restaurant
+    icon: {fileID: 0}
+    clothesShop: 0
+    items: 110000001200000013000000140000001500000016000000
+  - id: 3
+    name: Bar
+    icon: {fileID: 0}
+    clothesShop: 0
+    items: 1700000018000000190000001a0000001b0000001c000000
+  - id: 4
+    name: Hypster
+    icon: {fileID: 0}
+    clothesShop: 1
+    items: 05000000060000000700000008000000090000000a000000

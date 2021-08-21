@@ -90,12 +90,28 @@ public class ShopItemList : MonoBehaviour
         if (tmpData == null)
             return;
 
+        
 
         if (GameManager.dataSave.player.RemoveMoney(tmpData.price))
         {
-            GameManager.dataSave.player.inventory.Add(tmpData);
+
+            if (tmpData.tipe == DataEnum.ItemTipe.Consumable)
+            {
+                tmpData.Use();
+            }
+            else
+            {
+                GameManager.dataSave.player.inventory.Add(tmpData);
+            }
+           
+
+            if(!GameManager.dataSave.player.itemBuy.Contains(tmpData.id))
+            {
+                GameManager.dataSave.player.itemBuy.Add(tmpData.id);
+            }
+
             GameManager.dataSave.player.energy--;
         }
-
+        GameManager.SaveGame();
     }
 }

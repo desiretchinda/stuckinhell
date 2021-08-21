@@ -11,9 +11,9 @@ public class DataPlayer : BaseData
 {
 
     /// <summary>
-    /// Player's health
+    /// Player's level
     /// </summary>
-    public float health;
+    public float level;
 
     /// <summary>
     /// Player money in bank
@@ -37,6 +37,17 @@ public class DataPlayer : BaseData
 
 
     /// <summary>
+    /// Player's track of use item
+    /// </summary>
+    public List<int> itemUse = new List<int>();
+
+    /// <summary>
+    /// Player's track of buy item
+    /// </summary>
+    public List<int> itemBuy = new List<int>();
+
+
+    /// <summary>
     /// Player accepted quest
     /// </summary>
     public List<int> activeQuest = new List<int>();
@@ -45,12 +56,18 @@ public class DataPlayer : BaseData
     /// Player completed quest
     /// </summary>
     public List<int> completedQuest = new List<int>();
-
-
+    
     /// <summary>
     /// Player differents job places
     /// </summary>
     public List<int> playerJobs = new List<int>();
+
+    /// <summary>
+    /// differents npc talk to
+    /// </summary>
+    public List<int> npcTalkTo = new List<int>();
+
+    public int currentCloth = -1;
 
     public int energy;
 
@@ -76,6 +93,8 @@ public class DataPlayer : BaseData
 
         if (earnMoney < 0)
             earnMoney = 0;
+
+        GameManager.SaveGame();
     }
 
     public void RemoveEnergy(float value)
@@ -99,6 +118,8 @@ public class DataPlayer : BaseData
 
         if (index >= 0 && inventory.Count > index)
             inventory.RemoveAt(index);
+
+        GameManager.SaveGame();
     }
 
     public void AddItem(int id)
@@ -115,15 +136,18 @@ public class DataPlayer : BaseData
 
     public bool RemoveMoney(float amount)
     {
+
         if (earnMoney >= amount)
         {
             earnMoney -= amount;
+            GameManager.SaveGame();
             return true;
         }
 
         if (bankMoney >= amount)
         {
             bankMoney -= amount;
+            GameManager.SaveGame();
             return true;
         }
 
@@ -133,7 +157,7 @@ public class DataPlayer : BaseData
             earnMoney = 0;
             bankMoney -= amount;
         }
-
+        GameManager.SaveGame();
         return false;
     }
 
