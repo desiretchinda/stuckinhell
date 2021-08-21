@@ -14,6 +14,8 @@ public class SaveData
     /// </summary>
     public DataPlayer player = new DataPlayer();
 
+    public bool alreadyPlay;
+
     public UnityEngine.Vector3 lastPosition = UnityEngine.Vector3.zero;
 
 }

@@ -16,6 +16,8 @@ public class ShopHud : MonoBehaviour
 
     public ShopData tmpShop;
 
+    public UnityEngine.UI.Image shopRobotBody;
+
     private void Awake()
     {
         Instance = this;
@@ -24,7 +26,7 @@ public class ShopHud : MonoBehaviour
         CloseShop();
     }
 
- 
+
 
     /// <summary>
     /// Fonction to display a shop
@@ -36,6 +38,15 @@ public class ShopHud : MonoBehaviour
         tmpShop = GameManager.GetShop(shopId);
         if (tmpShop == null)
             return;
+
+
+        if (shopRobotBody)
+            if (tmpShop.clothesShop)
+                shopRobotBody.rectTransform.parent.gameObject.SetActive(true);
+            else
+            {
+                shopRobotBody.rectTransform.parent.gameObject.SetActive(false);
+            }
 
         PlayerComponent.Instance.preventMove = true;
         PlayerComponent.Instance.animator.SetBool("isMoving", false);

@@ -52,7 +52,8 @@ public class InventoryElementHUD : MonoBehaviour
 
     public void OnUse()
     {
-        if(current != null)
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
+        if (current != null)
         {
             current.Use();
             GameManager.SaveGame();

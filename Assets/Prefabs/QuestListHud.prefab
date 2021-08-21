@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1567,12 +1567,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660476718004}
   txt_name: {fileID: 5683365659109318330}
   thisBtn: {fileID: 5683365659820039855}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659330257971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1669,12 +1670,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660442842593}
   txt_name: {fileID: 5683365659899211247}
   thisBtn: {fileID: 5683365659736771043}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659357660426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,7 +1746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1771,12 +1773,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659144150008}
   txt_name: {fileID: 5683365658996353565}
   thisBtn: {fileID: 5683365661072340509}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659383321447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,7 +1924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1948,12 +1951,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659051460876}
   txt_name: {fileID: 5683365660339473432}
   thisBtn: {fileID: 5683365659862562449}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659464519096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2050,12 +2054,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659750059942}
   txt_name: {fileID: 5683365660116647609}
   thisBtn: {fileID: 5683365660140616385}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659485962338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,7 +3656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3678,12 +3683,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660513020555}
   txt_name: {fileID: 5683365659631147518}
   thisBtn: {fileID: 5683365659692191787}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659789934556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3855,12 +3861,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660982778745}
   txt_name: {fileID: 5683365658990801663}
   thisBtn: {fileID: 5683365660105058102}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659820039841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,7 +4311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4331,12 +4338,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660452424016}
   txt_name: {fileID: 5683365659012175502}
   thisBtn: {fileID: 5683365659725474247}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659899211233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,7 +4668,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4687,12 +4695,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659789934554}
   txt_name: {fileID: 5683365659633737511}
   thisBtn: {fileID: 5683365659015855075}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365659925870070
 GameObject:
   m_ObjectHideFlags: 0
@@ -5359,7 +5368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5386,12 +5395,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660102620190}
   txt_name: {fileID: 5683365660494028697}
   thisBtn: {fileID: 5683365659925870068}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660102620176
 GameObject:
   m_ObjectHideFlags: 0
@@ -6220,7 +6230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6247,12 +6257,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660731180474}
   txt_name: {fileID: 5683365660276235876}
   thisBtn: {fileID: 5683365660918357638}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660244025132
 GameObject:
   m_ObjectHideFlags: 0
@@ -6344,7 +6355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5683365660248283380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6859,7 +6870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6886,12 +6897,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365661014491153}
   txt_name: {fileID: 5683365659543123774}
   thisBtn: {fileID: 5683365660314604077}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660358505611
 GameObject:
   m_ObjectHideFlags: 0
@@ -7921,7 +7933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dbd0d6e8aa3ace943affd40542dd3800, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8075,7 +8087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8102,12 +8114,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659383321445}
   txt_name: {fileID: 5683365659973060620}
   thisBtn: {fileID: 5683365659695630644}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660719557404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8327,7 +8340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8354,12 +8367,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660719557402}
   txt_name: {fileID: 5683365660465877437}
   thisBtn: {fileID: 5683365659907904206}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660757818584
 GameObject:
   m_ObjectHideFlags: 0
@@ -8563,7 +8577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8590,12 +8604,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660640153401}
   txt_name: {fileID: 5683365659990659315}
   thisBtn: {fileID: 5683365659641507698}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660792964942
 GameObject:
   m_ObjectHideFlags: 0
@@ -8665,7 +8680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8692,12 +8707,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660125870042}
   txt_name: {fileID: 5683365659857574875}
   thisBtn: {fileID: 5683365659610153810}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660796721434
 GameObject:
   m_ObjectHideFlags: 0
@@ -8887,7 +8903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8914,12 +8930,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660480614266}
   txt_name: {fileID: 5683365659318918453}
   thisBtn: {fileID: 5683365660796721432}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660847892999
 GameObject:
   m_ObjectHideFlags: 0
@@ -9121,7 +9138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 584d75e0f14895e4d98b95fb7992aa80, type: 3}
+  m_Sprite: {fileID: 5582668621215915107, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9514,7 +9531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9541,12 +9558,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365658990294498}
   txt_name: {fileID: 5683365660017240873}
   thisBtn: {fileID: 5683365659677525353}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365660996353121
 GameObject:
   m_ObjectHideFlags: 0
@@ -9616,7 +9634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9643,12 +9661,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660000350079}
   txt_name: {fileID: 5683365661107593906}
   thisBtn: {fileID: 5683365658996864996}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365661014491155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9793,7 +9812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9820,12 +9839,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365659507429859}
   txt_name: {fileID: 5683365660847892997}
   thisBtn: {fileID: 5683365659157070782}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365661040660241
 GameObject:
   m_ObjectHideFlags: 0
@@ -10135,7 +10155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d33ce70f44f9f408df2b3e12867546, type: 3}
+  m_Sprite: {fileID: 7786939847844904948, guid: ee7335fe6e347e5439f600b12e11dba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10162,12 +10182,13 @@ MonoBehaviour:
     name: 
     icon: {fileID: 0}
     description: 
-    appearCondition: []
+    appearLevel: 0
     objectifs: []
     rewards: []
   spRender: {fileID: 5683365660244025130}
   txt_name: {fileID: 5683365660464067246}
   thisBtn: {fileID: 5683365661040660255}
+  goComplete: {fileID: 0}
 --- !u!1 &5683365661107593908
 GameObject:
   m_ObjectHideFlags: 0

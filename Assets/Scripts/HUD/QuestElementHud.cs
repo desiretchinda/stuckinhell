@@ -21,6 +21,8 @@ public class QuestElementHud : MonoBehaviour
 
     public Button thisBtn;
 
+
+
     ///// <summary>
     ///// UI to display the quest
     ///// </summary>
@@ -31,15 +33,32 @@ public class QuestElementHud : MonoBehaviour
         if (data == null)
             return;
 
+        if (data.ObjectifOk())
+            GetComponent<Image>().color = Color.green;
+        else
+            GetComponent<Image>().color = Color.white;
+
         gameObject.SetActive(true);
         current = data;
         if (spRender)
-            spRender.sprite = data.icon;
+            spRender.sprite = data.icon ? data.icon : QuestListhud.Instance.defaultQuestIcon;
 
         if (txt_name)
             txt_name.text = data.name;
 
+        if (thisBtn)
+        {
+            thisBtn.onClick.RemoveAllListeners();
+            thisBtn.onClick.AddListener(OpenQuest);
+        }
+
         gameObject.SetActive(true);
 
+    }
+
+    public void OpenQuest()
+    {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
+        QuestHud.Instance.DisplayQuest(current);
     }
 }

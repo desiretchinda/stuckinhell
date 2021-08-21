@@ -17,6 +17,7 @@ MonoBehaviour:
     name: Moloch
     icon: {fileID: 0}
     dialogText: Good morning, how are you doing?
+    storyDialog: 0
     choices:
     - choiceText: Are you ok man?
       choiceActions: 
@@ -28,11 +29,13 @@ MonoBehaviour:
     name: Moloch
     icon: {fileID: 0}
     dialogText: "I\u2019m great, thank you. "
+    storyDialog: 0
     choices: []
   - id: 2
     name: Gabriel
     icon: {fileID: 0}
     dialogText: Salary in hell help me buy a car
+    storyDialog: 0
     choices:
     - choiceText: Seriously?
       choiceActions: 
@@ -44,6 +47,7 @@ MonoBehaviour:
     name: Samael
     icon: {fileID: 0}
     dialogText: Here i am! what's the problem?
+    storyDialog: 0
     choices:
     - choiceText: Bye! just joking
       choiceActions: 
@@ -52,6 +56,7 @@ MonoBehaviour:
     name: Uriel
     icon: {fileID: 0}
     dialogText: My job here is demon destruction
+    storyDialog: 0
     choices:
     - choiceText: What?
       choiceActions: 
@@ -63,6 +68,7 @@ MonoBehaviour:
     name: Uriel
     icon: {fileID: 0}
     dialogText: demons destruction is my work
+    storyDialog: 0
     choices:
     - choiceText: And how much are you buy?
       choiceActions: 
@@ -71,6 +77,7 @@ MonoBehaviour:
     name: Uriel
     icon: {fileID: 0}
     dialogText: 50000$ for start
+    storyDialog: 0
     choices:
     - choiceText: ok
       choiceActions: 
@@ -82,120 +89,170 @@ MonoBehaviour:
     name: Socrate
     icon: {fileID: 0}
     dialogText: The only true wisdom is in knowing you know nothing
+    storyDialog: 0
     choices: []
   - id: 8
     name: Socrate
     icon: {fileID: 0}
     dialogText: The unexamined life is not worth living
+    storyDialog: 0
     choices: []
   - id: 9
     name: Socrate
     icon: {fileID: 0}
     dialogText: I cannot teach anybody anything
+    storyDialog: 0
     choices: []
   - id: 10
     name: Socrate
     icon: {fileID: 0}
     dialogText: There is only one good, knowledge, and one evil, ignorance.
+    storyDialog: 0
     choices: []
   - id: 11
     name: Socrate
     icon: {fileID: 0}
     dialogText: Be kind, for everyone you meet is fighting a hard battle.
+    storyDialog: 0
     choices: []
   - id: 12
     name: Socrate
     icon: {fileID: 0}
     dialogText: Wonder is the beginning of wisdom.
+    storyDialog: 0
     choices: []
   - id: 13
     name: Freud
     icon: {fileID: 0}
     dialogText: Out of your vulnerabilities will come your strength.
+    storyDialog: 0
     choices: []
   - id: 14
     name: Freud
     icon: {fileID: 0}
     dialogText: Unexpressed emotions will never die.
+    storyDialog: 0
     choices: []
   - id: 15
     name: Freud
     icon: {fileID: 0}
     dialogText: We are never so defenseless against suffering as when we love.
+    storyDialog: 0
     choices: []
   - id: 16
     name: Freud
     icon: {fileID: 0}
     dialogText: From error to error, one discovers the entire truth.
+    storyDialog: 0
     choices: []
   - id: 17
     name: Nietzsche
     icon: {fileID: 0}
     dialogText: Without music, life would be a mistake
+    storyDialog: 0
     choices: []
   - id: 18
     name: Nietzsche
     icon: {fileID: 0}
     dialogText: t is not a lack of love, but a lack of friendship that makes unhappy
       marriages.
+    storyDialog: 0
     choices: []
   - id: 19
     name: Nietzsche
     icon: {fileID: 0}
     dialogText: That which does not kill us makes us stronger.
+    storyDialog: 0
     choices: []
   - id: 20
     name: Nietzsche
     icon: {fileID: 0}
     dialogText: I'm not upset that you lied to me, I'm upset that from now on I can't
       believe you.
+    storyDialog: 0
     choices: []
   - id: 21
     name: 'Spinoza '
     icon: {fileID: 0}
     dialogText: The highest activity a human being can attain is learning for understanding,
       because to understand is to be free.
+    storyDialog: 0
     choices: []
   - id: 22
     name: 'Spinoza '
     icon: {fileID: 0}
     dialogText: The more you struggle to live, the less you live.
+    storyDialog: 0
     choices: []
   - id: 23
     name: 'Spinoza '
     icon: {fileID: 0}
     dialogText: "\u201CI do not know how to teach philosophy without becoming a disturber
       of the peace."
+    storyDialog: 0
     choices: []
   - id: 24
     name: 'Descartes '
     icon: {fileID: 0}
     dialogText: I think; therefore I am.
+    storyDialog: 0
     choices: []
   - id: 25
     name: 'Descartes '
     icon: {fileID: 0}
     dialogText: The reading of all good books is like conversation with the finest
       men of past centuries.
+    storyDialog: 0
     choices: []
   - id: 26
     name: 'Descartes '
     icon: {fileID: 0}
     dialogText: If you would be a real seeker after truth, it is necessary that at
       least once in your life you doubt, as far as possible, all things.
+    storyDialog: 0
     choices: []
   - id: 27
     name: Sartre
     icon: {fileID: 0}
     dialogText: If you're lonely when you're alone, you're in bad company.
+    storyDialog: 0
     choices: []
   - id: 28
     name: Sartre
     icon: {fileID: 0}
     dialogText: "Hell is\u2014other people!"
+    storyDialog: 0
     choices: []
   - id: 29
     name: Sartre
     icon: {fileID: 0}
     dialogText: Freedom is what we do with what is done to us.
+    storyDialog: 0
+    choices: []
+  - id: 30
+    name: GOD
+    icon: {fileID: 0}
+    dialogText: Hi buddy! here you are stuck in the hell of life and all you can
+      do is live. good luck to you. life has no manual. Do you want to start your
+      life?
+    storyDialog: 1
+    choices:
+    - choiceText: Yes
+      choiceActions: 
+      nextDialogId: 31
+    - choiceText: No
+      choiceActions: 
+      nextDialogId: 32
+  - id: 31
+    name: GOD
+    icon: {fileID: 0}
+    dialogText: A man who takes life with courage. Good luck to you
+    storyDialog: 1
+    choices: []
+  - id: 32
+    name: GOD
+    icon: {fileID: 0}
+    dialogText: Go complain to your parents. No one asks to come into the world.
+      Assiah
+    storyDialog: 1
     choices: []

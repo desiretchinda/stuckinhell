@@ -45,11 +45,13 @@ public class HUDStat : MonoBehaviour
 
     public void OpenQuestList()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         QuestListhud.Instance.openHud();
     }
 
     public void OpenInventory()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         InventoryHUD.Instance.OpenUI();
     }
 

@@ -9,6 +9,8 @@ public class QuestListhud : MonoBehaviour
 
     public List<QuestElementHud> itemHud = new List<QuestElementHud>();
 
+    public Sprite defaultQuestIcon;
+
     public Button closeBtn;
 
     private void Awake()
@@ -32,7 +34,7 @@ public class QuestListhud : MonoBehaviour
 
             if(GameManager.dataSave.player.activeQuest.Count > i)
             {
-                itemHud[i].SetUp(GameManager.GetQuest(GameManager.dataSave.player.activeQuest[i]));
+                itemHud[i].SetUp(GameManager.dataSave.player.activeQuest[i]);
             }
         }
 

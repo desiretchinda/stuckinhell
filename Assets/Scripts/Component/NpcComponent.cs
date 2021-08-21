@@ -60,6 +60,8 @@ public class NpcComponent : CharacterComponent
 
     private DialogData npcDialog = null;
 
+    public GameObject goQuesthud;
+
     new void Awake()
     {
 
@@ -71,6 +73,12 @@ public class NpcComponent : CharacterComponent
     new void Start()
     {
         base.Start();
+
+        if (goQuesthud)
+            if (idQuests.Count > 0)
+                goQuesthud.SetActive(true);
+            else
+                goQuesthud.SetActive(false);
 
         if (restTime < 0)
             restTime = Random.Range(1, 5);
@@ -182,7 +190,7 @@ public class NpcComponent : CharacterComponent
     {
         for (int i = 0, length = idQuests.Count; i < length; i++)
         {
-            if (!GameManager.dataSave.player.activeQuest.Contains(idQuests[i]) && !GameManager.dataSave.player.completedQuest.Contains(idQuests[i]))
+            if (GameManager.dataSave.player.activeQuest.Find(x=>x.id == idQuests[i]) == null && !GameManager.dataSave.player.completedQuest.Contains(idQuests[i]))
             {
                 return QuestHud.Instance.DisplayQuest(idQuests[i]);
             }

@@ -56,7 +56,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 4
       remove: 0
-  - id: 1
+  - id: 2
     name: Search a job
     icon: {fileID: 0}
     description: you make me spend money and now you need to go and search a job
@@ -74,7 +74,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 10
       remove: 1
-  - id: 1
+  - id: 3
     name: Pleasure is the key
     icon: {fileID: 0}
     description: go have fun with this girl I advise you
@@ -91,7 +91,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 20
       remove: 1
-  - id: 1
+  - id: 4
     name: I want to make you shit
     icon: {fileID: 0}
     description: Just do what i want
@@ -105,7 +105,7 @@ MonoBehaviour:
     - rewardTipe: 0
       parameter: 50000
       remove: 0
-  - id: 1
+  - id: 5
     name: Become a leviathon
     icon: {fileID: 0}
     description: Progress in your life
@@ -126,7 +126,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 20
       remove: 1
-  - id: 1
+  - id: 6
     name: Socialization
     icon: {fileID: 0}
     description: Make you shit and talk to person
@@ -143,7 +143,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 50
       remove: 1
-  - id: 1
+  - id: 7
     name: Search a job
     icon: {fileID: 0}
     description: Continue searching work
@@ -160,7 +160,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 15
       remove: 1
-  - id: 1
+  - id: 8
     name: Look swag
     icon: {fileID: 0}
     description: Feel the sapology
@@ -182,7 +182,7 @@ MonoBehaviour:
     - rewardTipe: 1
       parameter: 20
       remove: 0
-  - id: 1
+  - id: 9
     name: Eat and Drink
     icon: {fileID: 0}
     description: The title say all so just do it

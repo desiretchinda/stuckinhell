@@ -53,4 +53,9 @@ public class PlayerComponent : CharacterComponent
         InventoryHUD.Instance.OpenUI();
     }
 
+    public void PlayWalkSfx()
+    {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.walkSfx);
+    }
+
 }

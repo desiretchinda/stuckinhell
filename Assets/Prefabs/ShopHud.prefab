@@ -99,10 +99,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 2413269251723934579}
   txt_name: {fileID: 1578764837778000887}
   btnBuy: {fileID: 5167363679169600905}
   btnTry: {fileID: 7951314174306017691}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &89738556539478568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1556,7 @@ RectTransform:
   - {fileID: 464937787043445510}
   - {fileID: 464937786893699451}
   - {fileID: 464937786784458936}
+  - {fileID: 3937295463649566210}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1587,6 +1606,7 @@ MonoBehaviour:
     icon: {fileID: 0}
     clothesShop: 0
     items: 
+  shopRobotBody: {fileID: 1469822684028374058}
 --- !u!1 &464937786893699450
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,10 +2659,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 464937787164933191}
   txt_name: {fileID: 464937787118684940}
   btnBuy: {fileID: 464937788238171405}
   btnTry: {fileID: 6977951546610588596}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &464937788230896672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,10 +3012,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 1379115271959909851}
   txt_name: {fileID: 2897719237129641545}
   btnBuy: {fileID: 4285878386496103597}
   btnTry: {fileID: 3961544427238447441}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &546534795031170466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,6 +3168,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &640738296882575261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6771132398733246543}
+  - component: {fileID: 255787644727517746}
+  - component: {fileID: 1681978119491951789}
+  m_Layer: 0
+  m_Name: left_foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6771132398733246543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640738296882575261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -27.3, y: -66.171776}
+  m_SizeDelta: {x: 17.5977, y: 36.0853}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &255787644727517746
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640738296882575261}
+  m_CullTransparentMesh: 1
+--- !u!114 &1681978119491951789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640738296882575261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c16df13140c18464aa743d23de8486ef, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &665736372075910903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,6 +3619,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &773172305132412536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8797656195004596642}
+  - component: {fileID: 6612972431154286589}
+  - component: {fileID: 6546962679965069238}
+  m_Layer: 0
+  m_Name: head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8797656195004596642
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773172305132412536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 106}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6612972431154286589
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773172305132412536}
+  m_CullTransparentMesh: 1
+--- !u!114 &6546962679965069238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773172305132412536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e88a04c7e798b024da41904b267a209a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &798697286778492463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,10 +4185,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 1972906380527090096}
   txt_name: {fileID: 6436850857160510026}
   btnBuy: {fileID: 844739202675856370}
   btnTry: {fileID: 7012483664756182551}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &1109736243832518295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,6 +5207,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1600076380996345144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3621836664990559382}
+  - component: {fileID: 6475849126354533926}
+  - component: {fileID: 7188711864489534568}
+  m_Layer: 0
+  m_Name: right_arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3621836664990559382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600076380996345144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 54.4, y: 1.1639}
+  m_SizeDelta: {x: 25.832, y: 98.5888}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6475849126354533926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600076380996345144}
+  m_CullTransparentMesh: 1
+--- !u!114 &7188711864489534568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600076380996345144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c8d51ef7657c32d438e0bb03fc0313ad, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1619555632295541878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,10 +5502,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 6068077217212958982}
   txt_name: {fileID: 8887918919866775933}
   btnBuy: {fileID: 5195052030718397827}
   btnTry: {fileID: 3356156675921131483}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &1805069578014376567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,10 +5757,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 5600363452920346130}
   txt_name: {fileID: 2262181492295179097}
   btnBuy: {fileID: 3530881368438332084}
   btnTry: {fileID: 1533321068902797484}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &1852152836924394629
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,6 +6678,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &2296451958287982785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4859678886262177351}
+  - component: {fileID: 6970459921039093731}
+  - component: {fileID: 3601318465193298222}
+  m_Layer: 0
+  m_Name: Nek
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4859678886262177351
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296451958287982785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.5024, y: 49.88452}
+  m_SizeDelta: {x: 16.4604, y: 14.2309}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6970459921039093731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296451958287982785}
+  m_CullTransparentMesh: 1
+--- !u!114 &3601318465193298222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296451958287982785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 682c5f5105d0498438eccaac5e9ad1bd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2344534314262872305
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,10 +7270,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 5877575442706383104}
   txt_name: {fileID: 4651592949035389403}
   btnBuy: {fileID: 6094979696585646725}
   btnTry: {fileID: 4678077219666652620}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &2904868245281421363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7159,10 +7587,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 2827813297228629203}
   txt_name: {fileID: 7848414133351585890}
   btnBuy: {fileID: 8539889664347265000}
   btnTry: {fileID: 8735490540707155181}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &2950819971219997906
 GameObject:
   m_ObjectHideFlags: 0
@@ -9612,10 +10058,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 5178405508676657190}
   txt_name: {fileID: 6077501051677743555}
   btnBuy: {fileID: 4679488996175622805}
   btnTry: {fileID: 8504126890703559444}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &4235287485573075681
 GameObject:
   m_ObjectHideFlags: 0
@@ -10542,10 +11006,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 6385229318339428733}
   txt_name: {fileID: 7189491265218104306}
   btnBuy: {fileID: 2865764482300666264}
   btnTry: {fileID: 7596582610102105153}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &4573963252400211795
 GameObject:
   m_ObjectHideFlags: 0
@@ -10876,6 +11358,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4907968441841152021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 351319249578373035}
+  - component: {fileID: 2379635767325307506}
+  - component: {fileID: 6615528987870557493}
+  m_Layer: 0
+  m_Name: left_arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &351319249578373035
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907968441841152021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -59.2, y: 0.8}
+  m_SizeDelta: {x: 25.3, y: 99.1147}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2379635767325307506
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907968441841152021}
+  m_CullTransparentMesh: 1
+--- !u!114 &6615528987870557493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4907968441841152021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 61fa32eb146eace4d906fc5f449f6314, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4995404690938038296
 GameObject:
   m_ObjectHideFlags: 0
@@ -11318,10 +11875,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 1633229109289202448}
   txt_name: {fileID: 7790612797251085717}
   btnBuy: {fileID: 626736424681973727}
   btnTry: {fileID: 6392031415689736580}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &5392313101868643769
 GameObject:
   m_ObjectHideFlags: 0
@@ -11456,6 +12031,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5433684982115573637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3355807037733882549}
+  - component: {fileID: 1954112064159834560}
+  - component: {fileID: 1469822684028374058}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3355807037733882549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433684982115573637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1954112064159834560
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433684982115573637}
+  m_CullTransparentMesh: 1
+--- !u!114 &1469822684028374058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433684982115573637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 34a39ec29023675408663268720d8d2f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5446475722490434579
 GameObject:
   m_ObjectHideFlags: 0
@@ -11810,10 +12460,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 1421798222353698975}
   txt_name: {fileID: 6083337327747293427}
   btnBuy: {fileID: 3632686511875857388}
   btnTry: {fileID: 9127364171153452570}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &5562247140255674016
 GameObject:
   m_ObjectHideFlags: 0
@@ -12423,10 +13091,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 5878160168855595227}
   txt_name: {fileID: 4851385133324950915}
   btnBuy: {fileID: 2919054422777053637}
   btnTry: {fileID: 2668539999339466793}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &5864124174475881804
 GameObject:
   m_ObjectHideFlags: 0
@@ -12977,10 +13663,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 6086964215064612424}
   txt_name: {fileID: 5844078332965754503}
   btnBuy: {fileID: 5551869348271652637}
   btnTry: {fileID: 4071659630846537454}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &6128080173053364553
 GameObject:
   m_ObjectHideFlags: 0
@@ -14590,10 +15294,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 3139281116614328369}
   txt_name: {fileID: 9162706930891713318}
   btnBuy: {fileID: 1133066165067541579}
   btnTry: {fileID: 108665615419804965}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &6852036320966755034
 GameObject:
   m_ObjectHideFlags: 0
@@ -14827,10 +15549,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 1008857919959486056}
   txt_name: {fileID: 6076043368388658323}
   btnBuy: {fileID: 3402392470884807556}
   btnTry: {fileID: 7643913558635657321}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &7318735235471050605
 GameObject:
   m_ObjectHideFlags: 0
@@ -14930,10 +15670,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 4556066135442385219}
   txt_name: {fileID: 8233099855585017117}
   btnBuy: {fileID: 8539111205130973295}
   btnTry: {fileID: 8953542398053356019}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &7550212978498312827
 GameObject:
   m_ObjectHideFlags: 0
@@ -15229,10 +15987,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 7839226202844460335}
   txt_name: {fileID: 6970199186268889275}
   btnBuy: {fileID: 5319157394886673231}
   btnTry: {fileID: 1641361356103888041}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &7639129813517797515
 GameObject:
   m_ObjectHideFlags: 0
@@ -15374,6 +16150,81 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7670444233573987280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7269334053618078698}
+  - component: {fileID: 6783215142484486748}
+  - component: {fileID: 4628315464231751306}
+  m_Layer: 0
+  m_Name: right_foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7269334053618078698
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670444233573987280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3937295463649566210}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.1, y: -66.7}
+  m_SizeDelta: {x: 14.9565, y: 35.0289}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6783215142484486748
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670444233573987280}
+  m_CullTransparentMesh: 1
+--- !u!114 &4628315464231751306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670444233573987280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06581525, g: 0.45406827, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b723aff80777eb54ebd5b8e5e402702c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15959,10 +16810,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 6268236597831882217}
   txt_name: {fileID: 6598856742561564457}
   btnBuy: {fileID: 5786345187944396134}
   btnTry: {fileID: 5289254764026359655}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &7940811634023291154
 GameObject:
   m_ObjectHideFlags: 0
@@ -16561,6 +17430,43 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &8235510003214661867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3937295463649566210}
+  m_Layer: 0
+  m_Name: RobotShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3937295463649566210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235510003214661867}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 714, y: 96, z: -419.03763}
+  m_LocalScale: {x: 1.4, y: 1.5, z: 1.5}
+  m_Children:
+  - {fileID: 4859678886262177351}
+  - {fileID: 8797656195004596642}
+  - {fileID: 7269334053618078698}
+  - {fileID: 6771132398733246543}
+  - {fileID: 3355807037733882549}
+  - {fileID: 351319249578373035}
+  - {fileID: 3621836664990559382}
+  m_Father: {fileID: 464937786885847103}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8382751406135312320
 GameObject:
   m_ObjectHideFlags: 0
@@ -17755,10 +18661,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 5355932309858636055}
   txt_name: {fileID: 997830063304012055}
   btnBuy: {fileID: 2829226425405674709}
   btnTry: {fileID: 4989765901054223774}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &8930249199255340002
 GameObject:
   m_ObjectHideFlags: 0
@@ -17979,10 +18903,28 @@ MonoBehaviour:
     price: 0
     collectable: 0
     tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
   spRender: {fileID: 7248308532556377759}
   txt_name: {fileID: 1756403292454595841}
   btnBuy: {fileID: 2981770737224918391}
   btnTry: {fileID: 77750777236354507}
+  tmpData:
+    id: 0
+    name: 
+    icon: {fileID: 0}
+    price: 0
+    collectable: 0
+    tipe: 0
+    shirt: {fileID: 0}
+    cap: {fileID: 0}
+    pan: {fileID: 0}
+    shoe: {fileID: 0}
+    reward: []
+  txt_price: {fileID: 0}
 --- !u!1 &9048613923539936622
 GameObject:
   m_ObjectHideFlags: 0

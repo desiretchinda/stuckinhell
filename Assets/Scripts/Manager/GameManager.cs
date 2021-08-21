@@ -82,10 +82,19 @@ public class GameManager : MonoBehaviour
             btntalk.onClick.AddListener(OnTalk);
             btntalk.gameObject.SetActive(false);
         }
+
+       
+            
+    }
+
+    private void Start()
+    {
+
     }
 
     public void OnEnterFacility()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         if (PlayerComponent.Instance.currentFrontFacility)
         {
             PlayerComponent.Instance.currentFrontFacility.OpenFacility();
@@ -96,6 +105,7 @@ public class GameManager : MonoBehaviour
 
     public void OnTalk()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         if (!PlayerComponent.Instance.currentTalkingNpc)
             return;
 
@@ -122,6 +132,11 @@ public class GameManager : MonoBehaviour
         {
             Newgame();
         }
+    }
+
+    private void Update()
+    {
+        UpdateQuest();
     }
 
     /// <summary>
@@ -161,6 +176,14 @@ public class GameManager : MonoBehaviour
 
             dataAsJson = File.ReadAllText(filePath);
             dataSave = JsonUtility.FromJson<SaveData>(dataAsJson);
+
+            DataItem tmp;
+
+            for (int i = 0, length = dataSave.player.inventory.Count; i < length; i++)
+            {
+                tmp = GetItem(dataSave.player.inventory[i].id);
+                dataSave.player.inventory[i].icon = tmp.icon;
+            }
             
             return true;
         }
@@ -171,6 +194,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void UpdateQuest()
+    {
+        for (int i = 0, length = dataSave.player.activeQuest.Count ; i < length; i++)
+        {
+            if(dataSave.player.activeQuest[i] != null)
+            {
+                if (!dataSave.player.completedQuest.Contains(dataSave.player.activeQuest[i].id))
+                {
+                    if(dataSave.player.activeQuest[i].ObjectifOk() && !QuestHud.Instance.occupied)
+                    {
+                        QuestHud.Instance.DisplayQuest(dataSave.player.activeQuest[i]);
+                        dataSave.player.completedQuest.Add(dataSave.player.activeQuest[i].id);
+                        
+                        //FX quest complete here
+                    }
+                }
+            }
+            
+        }
+    }
+
     /// <summary>
     /// Function to save the player game
     /// </summary>
@@ -178,6 +222,8 @@ public class GameManager : MonoBehaviour
     {
         if (dataSave == null)
             dataSave = new SaveData();
+
+        dataSave.alreadyPlay = true;
 
         dataSave.lastPosition = PlayerComponent.Instance.transform.position;
         string nameSave = "StuckOnHellSaves";
@@ -360,7 +406,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     /// <param name="id">dialog ID</param>
     /// <returns></returns>
-    public static DialogData GetDialog(int id)
+    public static DialogData GetDialog(int id, bool storyDialog = false)
     {
         if (dialogueCacheDatabase == null || dialogueCacheDatabase.Count <= 0)
         {
@@ -380,7 +426,7 @@ public class GameManager : MonoBehaviour
 
 
 
-        return dialogueCacheDatabase.Find(x => (x.id == id));
+        return dialogueCacheDatabase.Find(x => (x.id == id && x.storyDialog == storyDialog));
     }
 
     /// <summary>
@@ -408,7 +454,7 @@ public class GameManager : MonoBehaviour
 
 
 
-        return dialogueCacheDatabase.Find(x => (x.id == id));
+        return dialogueCacheDatabase.Find(x => (x.id == id && x.storyDialog == false));
     }
 
     /// <summary>

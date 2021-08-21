@@ -56,7 +56,18 @@ public class ShopItemList : MonoBehaviour
 
 
         if (btnBuy)
+        {
             btnBuy.onClick.AddListener(onBtnBuy);
+            if (GameManager.dataSave.player.TotalMoney() >= data.price)
+            {
+                btnBuy.interactable = true;
+            }
+            else
+            {
+                btnBuy.interactable = false;
+            }
+        }
+
 
         if (btnTry)
             btnTry.onClick.AddListener(onBtnTry);
@@ -79,7 +90,12 @@ public class ShopItemList : MonoBehaviour
     /// </summary>
     public void onBtnTry()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         GameManager.dataSave.player.energy--;
+        if (tmpData.tipe == DataEnum.ItemTipe.Cloth && ShopHud.Instance.shopRobotBody)
+        {
+            ShopHud.Instance.shopRobotBody.sprite = tmpData.shirt;
+        }
     }
 
     /// <summary>
@@ -87,10 +103,11 @@ public class ShopItemList : MonoBehaviour
     /// </summary>
     public void onBtnBuy()
     {
+        SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
         if (tmpData == null)
             return;
 
-        
+
 
         if (GameManager.dataSave.player.RemoveMoney(tmpData.price))
         {
@@ -103,9 +120,9 @@ public class ShopItemList : MonoBehaviour
             {
                 GameManager.dataSave.player.inventory.Add(tmpData);
             }
-           
 
-            if(!GameManager.dataSave.player.itemBuy.Contains(tmpData.id))
+
+            if (!GameManager.dataSave.player.itemBuy.Contains(tmpData.id))
             {
                 GameManager.dataSave.player.itemBuy.Add(tmpData.id);
             }

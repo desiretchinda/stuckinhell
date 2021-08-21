@@ -10,7 +10,7 @@ public class ShopDatabase : ScriptableObject
 {
     public List<ShopData> shopDatabase = new List<ShopData>();
 
-    public int d;
+
 
 #if UNITY_EDITOR
 

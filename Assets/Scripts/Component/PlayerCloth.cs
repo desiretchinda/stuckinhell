@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The component that allows to equip the player with a cloth from the id of the cloth in the database
+/// </summary>
 public class PlayerCloth : MonoBehaviour
 {
 

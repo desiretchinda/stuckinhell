@@ -154,11 +154,12 @@ public class FacilityHUD : MonoBehaviour
                     GameManager.dataSave.player.playerJobs.Add(idFacility);
                     GameManager.dataSave.player.energy--;
                 }
-
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
                 break;
             case DataEnum.PlayerAction.OrderItem:
 
                 ShopHud.Instance.OpenShop(action[actionIndex].parameter);
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
                 break;
             case DataEnum.PlayerAction.Rob:
                 if (GameManager.dataSave.player.energy <= 0)
@@ -166,7 +167,8 @@ public class FacilityHUD : MonoBehaviour
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
                 GameManager.dataSave.player.energy--;
-                GameManager.dataSave.player.energy -= 2;
+                GameManager.dataSave.player.energy -= 3;
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.cashSfx);
                 break;
             case DataEnum.PlayerAction.Chat:
                 DialogData dialog = GameManager.GetRandomDialog();
@@ -178,6 +180,8 @@ public class FacilityHUD : MonoBehaviour
 
                     if (txtWelcome)
                         txtWelcome.text = dialog.dialogText;
+
+                    SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
                 }
                 break;
             case DataEnum.PlayerAction.Hack:
@@ -185,7 +189,8 @@ public class FacilityHUD : MonoBehaviour
                     return;
 
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                GameManager.dataSave.player.energy -= 2;
+                GameManager.dataSave.player.energy -= 3;
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.cashSfx);
 
                 break;
             case DataEnum.PlayerAction.Work:
@@ -195,7 +200,8 @@ public class FacilityHUD : MonoBehaviour
                 if (GameManager.dataSave.player.CanWork(idFacility))
                 {
                     GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
-                    GameManager.dataSave.player.energy--;
+                    GameManager.dataSave.player.energy-=3;
+                    SoundManager.Instance.PlaySfx(SoundManager.Instance.cashSfx);
                 }
 
                 break;
@@ -204,7 +210,7 @@ public class FacilityHUD : MonoBehaviour
                     return;
                 break;
             case DataEnum.PlayerAction.Sleep:
-
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.normalBtnSfx);
                 GameManager.NexDay();
                 break;
             case DataEnum.PlayerAction.Dance:
@@ -212,6 +218,7 @@ public class FacilityHUD : MonoBehaviour
             case DataEnum.PlayerAction.borrow:
                 GameManager.dataSave.player.earnMoney += action[actionIndex].parameter;
                 GameManager.dataSave.player.energy -= 5;
+                SoundManager.Instance.PlaySfx(SoundManager.Instance.cashSfx);
                 break;
             default:
                 break;

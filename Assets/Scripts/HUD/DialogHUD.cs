@@ -35,7 +35,12 @@ public class DialogHUD : MonoBehaviour
         if (btnLeave)
             btnLeave.onClick.AddListener(LeaveDialog);
         HideChoices();
-        gameObject.SetActive(false);
+        if (!GameManager.dataSave.alreadyPlay)
+        {
+            DialogHUD.Instance.DisplayDialog(GameManager.GetDialog(30, true), null);
+        }
+        else
+            gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -117,7 +122,7 @@ public class DialogHUD : MonoBehaviour
             return;
 
         if (choice.nextDialogId > 0)
-            DisplayDialog(GameManager.GetDialog(choice.nextDialogId), null);
+            DisplayDialog(GameManager.GetDialog(choice.nextDialogId, ((choice.nextDialogId == 31 | choice.nextDialogId == 32) ? true : false)), null);
         else
             LeaveDialog();
     }

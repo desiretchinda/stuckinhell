@@ -14,6 +14,8 @@ public class DialogData : BaseData
     /// </summary>
     public string dialogText;
 
+    public bool storyDialog;
+
     /// <summary>
     /// Differents choices of this dialog
     /// </summary>

@@ -50,7 +50,7 @@ public class DataPlayer : BaseData
     /// <summary>
     /// Player accepted quest
     /// </summary>
-    public List<int> activeQuest = new List<int>();
+    public List<DataQuest> activeQuest = new List<DataQuest>();
 
     /// <summary>
     /// Player completed quest
